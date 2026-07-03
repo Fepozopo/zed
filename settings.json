@@ -106,7 +106,7 @@
     },
     "default_model": {
       "provider": "openai-subscribed",
-      "model": "gpt-5.4-mini",
+      "model": "gpt-5.4",
       "enable_thinking": true,
       "effort": "high",
     },
@@ -123,6 +123,7 @@
       "effort": "high",
     },
     "tool_permissions": {
+      "default": "allow",
       "tools": {
         "terminal": {
           "always_deny": [{ "pattern": "git\\s+(add|commit)" }],
@@ -135,9 +136,6 @@
             { "pattern": "rg" },
             { "pattern": "sed" },
           ],
-        },
-        "mcp": {
-          "always_allow": [{ "pattern": "*" }],
         },
       },
     },
