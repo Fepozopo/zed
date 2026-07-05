@@ -14,14 +14,19 @@
     "light": "Catppuccin Mocha",
     "dark": "Catppuccin Mocha",
   },
-  "vim_mode": true,
-  "ui_font_size": 15,
-  "buffer_font_size": 12,
   "theme": {
     "mode": "dark",
     "light": "Catppuccin Mocha",
     "dark": "Catppuccin Mocha",
   },
+  "theme_overrides": {
+    "Catppuccin Mocha": {
+      "hint": "#94E2D5",
+    },
+  },
+  "vim_mode": true,
+  "ui_font_size": 15,
+  "buffer_font_size": 12,
   "colorize_brackets": true,
   // Indentation, rainbow indentation
   "indent_guides": {
@@ -106,7 +111,7 @@
     },
     "default_model": {
       "provider": "openai-subscribed",
-      "model": "gpt-5.4",
+      "model": "gpt-5.4-mini",
       "enable_thinking": true,
       "effort": "high",
     },
@@ -161,7 +166,7 @@
     "catppuccin": true,
     "catppuccin-icons": true,
     "codebook": true,
-    "dockerfile": true,
+    "comment": true,
     "lua": true,
     "sql": true,
     "zig": true,
@@ -169,20 +174,34 @@
     "make": true,
     "git-firefly": true,
     "rainbow-csv": true,
-    "comment": true,
     "toml": true,
+    "gosum": true,
+    "dockerfile": true,
+    "docker-compose": true,
   },
   "inlay_hints": {
     "enabled": false,
   },
-  "code_lens": "on",
+  "inline_code_actions": true,
+  "code_lens": "menu",
+  "diagnostics": {
+    "button": true,
+    "include_warnings": true,
+    "inline": {
+      "enabled": true,
+      "update_debounce_ms": 150,
+      "padding": 8,
+      "min_column": 0,
+      "max_severity": "all",
+    },
+  },
   "languages": {
     "Go": {
+      "language_servers": ["gopls"],
+      "formatter": ["language_server"],
       "code_actions_on_format": {
         "golangcilint": true,
       },
-      "language_servers": ["gopls"],
-      "formatter": ["language_server"],
     },
     "Python": {
       "language_servers": [
@@ -197,6 +216,9 @@
         "language_server": {
           "name": "ruff",
         },
+      },
+      "code_actions_on_format": {
+        "source.organizeImports.ruff": true,
       },
     },
   },
