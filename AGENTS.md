@@ -1,4 +1,8 @@
-### Code Documentation and Commenting Requirements
+# Guidelines
+
+- Never guess or make assumptions about missing requirements, technical details, or user intent. If any part of a request is vague, ambiguous, or lacks context, you must stop and ask specific clarifying questions before writing any code or providing a solution. Only move forward once you have all the necessary context.
+
+# Code Documentation and Commenting Requirements
 
 Whenever you write, modify, or review code, you must strictly adhere to the following documentation rules:
 
@@ -17,12 +21,14 @@ Whenever you write, modify, or review code, you must strictly adhere to the foll
     - If you change code that has an associated inline comment, you **must** rewrite the comment so it remains perfectly accurate. Never leave stale or orphaned comments behind.
 
 <!-- codebase-memory-mcp:start -->
+
 # Codebase Knowledge Graph (codebase-memory-mcp)
 
 This project uses codebase-memory-mcp to maintain a knowledge graph of the codebase.
 ALWAYS prefer MCP graph tools over grep/glob/file-search for code discovery.
 
 ## Priority Order
+
 1. `search_graph` — find functions, classes, routes, variables by pattern
 2. `trace_path` — trace who calls a function or what it calls
 3. `get_code_snippet` — read specific function/class source code
@@ -30,11 +36,13 @@ ALWAYS prefer MCP graph tools over grep/glob/file-search for code discovery.
 5. `get_architecture` — high-level project summary
 
 ## When to fall back to grep/glob
+
 - Searching for string literals, error messages, config values
 - Searching non-code files (Dockerfiles, shell scripts, configs)
 - When MCP tools return insufficient results
 
 ## Examples
+
 - Find a handler: `search_graph(name_pattern=".*OrderHandler.*")`
 - Who calls it: `trace_path(function_name="OrderHandler", direction="inbound")`
 - Read source: `get_code_snippet(qualified_name="pkg/orders.OrderHandler")`
