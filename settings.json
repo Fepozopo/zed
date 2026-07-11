@@ -168,6 +168,7 @@
     "comment": true,
     "lua": true,
     "sql": true,
+    "odin": true,
     "zig": true,
     "vue": true,
     "make": true,
