@@ -123,7 +123,7 @@
     },
     "commit_message_model": {
       "provider": "openai-subscribed",
-      "model": "gpt-5.4-mini",
+      "model": "gpt-5.6-luna",
       "enable_thinking": true,
       "effort": "high",
     },
