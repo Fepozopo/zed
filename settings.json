@@ -204,22 +204,9 @@
       "max_severity": "all",
     },
   },
-  "lsp": {
-    "golangci-lint": {
-      "initialization_options": {
-        "command": [
-          "golangci-lint",
-          "run",
-          "--output.json.path=stdout",
-          "--show-stats=false",
-          "--issues-exit-code=1",
-        ],
-      },
-    },
-  },
   "languages": {
     "Go": {
-      "language_servers": ["gopls", "golangci-lint"],
+      "language_servers": ["gopls"],
       "formatter": ["language_server"],
       "code_actions_on_format": {
         "golangcilint": true,
@@ -244,4 +231,5 @@
       },
     },
   },
+  "lsp": {},
 }
