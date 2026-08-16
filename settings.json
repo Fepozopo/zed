@@ -208,9 +208,6 @@
     "Go": {
       "language_servers": ["gopls"],
       "formatter": ["language_server"],
-      "code_actions_on_format": {
-        "golangcilint": true,
-      },
     },
     "Python": {
       "language_servers": [
