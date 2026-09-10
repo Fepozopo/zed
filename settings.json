@@ -24,6 +24,9 @@
       "hint": "#94E2D5",
     },
   },
+  "cursor_animation": {
+    "enabled": true,
+  },
   "vim_mode": true,
   "ui_font_size": 15,
   "buffer_font_size": 12,
@@ -114,7 +117,7 @@
     },
     "default_model": {
       "provider": "openai-subscribed",
-      "model": "gpt-5.6-terra",
+      "model": "gpt-5.6-luna",
       "enable_thinking": true,
       "effort": "high",
     },
