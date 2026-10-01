@@ -101,15 +101,15 @@
       },
       {
         "provider": "openai-subscribed",
-        "model": "gpt-6-sol",
+        "model": "gpt-6-astra",
         "enable_thinking": true,
         "effort": "high",
       },
       {
         "provider": "openai-subscribed",
-        "model": "gpt-6-astra",
+        "model": "gpt-6.1-sol",
         "enable_thinking": true,
-        "effort": "high",
+        "effort": "low",
       },
     ],
     "dock": "left",
@@ -122,13 +122,13 @@
     },
     "default_model": {
       "provider": "openai-subscribed",
-      "model": "gpt-6-luna",
+      "model": "gpt-6.1-sol",
       "enable_thinking": true,
       "effort": "high",
     },
     "inline_assistant_model": {
       "provider": "openai-subscribed",
-      "model": "gpt-6-sol",
+      "model": "gpt-6.1-sol",
       "enable_thinking": true,
     },
     "commit_message_model": {
