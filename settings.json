@@ -151,15 +151,6 @@
       "tools": {
         "terminal": {
           "always_deny": [{ "pattern": "git\\s+(add|commit)" }],
-          "always_allow": [
-            { "pattern": "find" },
-            { "pattern": "git\\s+(diff|log|status)" },
-            { "pattern": "go\\s+(build|test|vet)" },
-            { "pattern": "gofmt" },
-            { "pattern": "grep" },
-            { "pattern": "rg" },
-            { "pattern": "sed" },
-          ],
         },
       },
     },
