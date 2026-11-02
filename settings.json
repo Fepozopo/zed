@@ -115,7 +115,7 @@
       },
       {
         "provider": "openai-subscribed",
-        "model": "gpt-6-astra",
+        "model": "gpt-6.1-terra",
         "enable_thinking": true,
         "effort": "high",
       },
@@ -125,10 +125,16 @@
         "enable_thinking": true,
         "effort": "high",
       },
+      {
+        "provider": "openai-subscribed",
+        "model": "gpt-6-astra",
+        "enable_thinking": true,
+        "effort": "high",
+      },
     ],
     "default_model": {
       "provider": "openai-subscribed",
-      "model": "gpt-6-luna",
+      "model": "gpt-6.1-sol",
       "enable_thinking": true,
       "effort": "high",
     },
