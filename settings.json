@@ -121,13 +121,13 @@
       },
       {
         "provider": "openai-subscribed",
-        "model": "gpt-6.1-sol",
+        "model": "gpt-6.2-sol",
         "enable_thinking": true,
         "effort": "high",
       },
       {
         "provider": "openai-subscribed",
-        "model": "gpt-6-astra",
+        "model": "gpt-6.2-astra",
         "enable_thinking": true,
         "effort": "high",
       },
